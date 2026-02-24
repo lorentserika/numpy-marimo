@@ -1,0 +1,523 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.20.2"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "5a7f333809564d05f8036549b81b14c1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"numpy-exercises-interaktiivne-marimo\">NumPy Exercises \u2014 interaktiivne Marimo</h1>\n<ul>\n<li>\u2705 <strong>Iga rida on lahti seletatud</strong> slidrite ja visuaalidega</li>\n<li>\u2705 <strong>Tudengi sisestuskastid</strong> k\u00f5igile 21 reale</li>\n<li>\u2705 <strong>\"Kontrolli\" nupp</strong> \u2014 vastust kontrollitakse ainult nupuvajutusel</li>\n<li>\u2705 <strong>3-tasemeline vihjes\u00fcsteem</strong> (accordion)</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "3083b15426186c58f216ae9ade27da42",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-import-numpy-as-np-miks-alias-np\">1) <code>import numpy as np</code> \u2014 miks alias <code>np</code>?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "b80b914e8755df2a1b42e92db5c2d65f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-npzeros-npones-npones5-massiivi-loomine\">2) <code>np.zeros</code>, <code>np.ones</code>, <code>np.ones()*5</code> \u2014 massiivi loomine</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "a308fbc1614438941783d35063e4e56e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-nparange-vahemikud-ja-samm\">3) <code>np.arange(...)</code> \u2014 vahemikud ja samm</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "f3d96aa1ffab50cd63e635f026e4c7db",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-reshape-ja-npeye-maatriksid\">4) <code>reshape</code> ja <code>np.eye</code> \u2014 maatriksid</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aqbW",
+      "code_hash": "5062c4a1f8b9eba9833d4d02c63c3e20",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-juhuarvud-rand-randn\">5) Juhuarvud: <code>rand</code>, <code>randn</code></h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wAgl",
+      "code_hash": "6b94aaff09c91eb064a0ab8a52d291b9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-reshape-jagamine-ja-linspace\">6) <code>reshape</code> + jagamine ja <code>linspace</code></h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LJZf",
+      "code_hash": "1dc8e1c5fad2189e22005300527bc3e0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"7-numpy-indekseerimine-mat-nparange126reshape55\">7) NumPy indekseerimine \u2014 <code>mat = np.arange(1,26).reshape(5,5)</code></h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "YWSi",
+      "code_hash": "3e8db0b13138d30e5b2203b45aa22c09",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"slicing-demonstratsioon-slidrid\">Slicing-demonstratsioon (slidrid)</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dxZZ",
+      "code_hash": "7fed548f80df3e7d513ac4ed76163fdf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-agregeerivad-tehted-sum-std-sumaxis0\">8) Agregeerivad tehted: <code>sum</code>, <code>std</code>, <code>sum(axis=0)</code></h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "woaO",
+      "code_hash": "e8ed8a64c8109d2e8659c0d436b225a9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"kokkuvote-koik-21-rida\">Kokkuv\u00f5te \u2014 k\u00f5ik 21 rida</h2>\n<table>\n<thead>\n<tr>\n<th>#</th>\n<th>Avaldis</th>\n<th>Selgitus</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><code>import numpy as np</code></td>\n<td>NumPy alias</td>\n</tr>\n<tr>\n<td>2</td>\n<td><code>np.zeros(10)</code></td>\n<td>10 nulli</td>\n</tr>\n<tr>\n<td>3</td>\n<td><code>np.ones(10)</code></td>\n<td>10 \u00fchte</td>\n</tr>\n<tr>\n<td>4</td>\n<td><code>np.ones(10) * 5</code></td>\n<td>elementhaaval korrutamine</td>\n</tr>\n<tr>\n<td>5</td>\n<td><code>np.arange(10, 51)</code></td>\n<td>t\u00e4isarvud 10..50</td>\n</tr>\n<tr>\n<td>6</td>\n<td><code>np.arange(10, 51, 2)</code></td>\n<td>paarisarvud</td>\n</tr>\n<tr>\n<td>7</td>\n<td><code>np.arange(9).reshape(3,3)</code></td>\n<td>3\u00d73 maatriks</td>\n</tr>\n<tr>\n<td>8</td>\n<td><code>np.eye(3)</code></td>\n<td>identiteedimaatriks</td>\n</tr>\n<tr>\n<td>9</td>\n<td><code>np.random.rand(1)</code></td>\n<td>\u00fchtlane jaotus [0,1)</td>\n</tr>\n<tr>\n<td>10</td>\n<td><code>np.random.randn(25)</code></td>\n<td>normaaljaotus</td>\n</tr>\n<tr>\n<td>11</td>\n<td><code>np.arange(1,101).reshape(10,10)/100</code></td>\n<td>skaleeritud maatriks</td>\n</tr>\n<tr>\n<td>12</td>\n<td><code>np.linspace(0,1,20)</code></td>\n<td>v\u00f5rdsed punktid</td>\n</tr>\n<tr>\n<td>13</td>\n<td><code>np.arange(1,26).reshape(5,5)</code></td>\n<td>5\u00d75 t\u00f6\u00f6maatriks</td>\n</tr>\n<tr>\n<td>14</td>\n<td><code>mat[2:,1:]</code></td>\n<td>alammaatriks</td>\n</tr>\n<tr>\n<td>15</td>\n<td><code>mat[3,4]</code></td>\n<td>\u00fcksik element</td>\n</tr>\n<tr>\n<td>16</td>\n<td><code>mat[:3,1].reshape(3,1)</code></td>\n<td>veerutulp</td>\n</tr>\n<tr>\n<td>17</td>\n<td><code>mat[4]</code></td>\n<td>viimane rida</td>\n</tr>\n<tr>\n<td>18</td>\n<td><code>mat[3:]</code></td>\n<td>viimased read</td>\n</tr>\n<tr>\n<td>19</td>\n<td><code>mat.sum()</code></td>\n<td>elementide summa</td>\n</tr>\n<tr>\n<td>20</td>\n<td><code>mat.std()</code></td>\n<td>standardh\u00e4lve</td>\n</tr>\n<tr>\n<td>21</td>\n<td><code>mat.sum(axis=0)</code></td>\n<td>veergude summad</td>\n</tr>\n</tbody>\n</table></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "956b26614911eb811e4fd769fc5ab704",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "f274addad3f1b860ae3ba5559d41207e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "1b0c43c65b4df78278112d4156504225",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "c53f06dd7f5b1947cdb249ccf4689ac8",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "8c988dc4526283b7a18b969dba954786",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "09043b723a8a4a0f43b4475095e7fc78",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "4e0d1976f70a044b2608c7c50af735c7",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "9b63fe5483aa063964ea1e521abaa96a",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "2e5179866c62015cdab5568224f8c388",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "28554bc55e61dd98909bd937bfe60de4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "7308e484235558519377c83ccc9d3af3",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "60b0d78adfbb4f4bb33c2c3b937e969a",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "67e29c34589635da612924fdfe0c2020",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "159fdb94cb93b76492becb53f62088d0",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "43b2093a991dab963f26c621f7cc380f",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "f9d5f9576f3a805751d909cd1c10012a",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "0c0f635a03c17159808289cef627a2ea",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "a680ba62a2766f7eb54e4110edbd9ce0",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "cdab9630f0913f1773cdf917b1daf24e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "922c5f6caecb887dd895212be6634774",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "78c78e9fbcda01d7e7db58c303627491",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "fe7100219bbe1c000d48a6152c4e694e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "659fb983178f415c82874e451a383c28",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": "3cee07f29c952bc719561266c5d3942d",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": "fd5c75b3616556611612ccf0066b663d",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "NCOB",
+      "code_hash": "4032282baa8a18c752ba43b2c7c699c3",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TRpd",
+      "code_hash": "be08dbfc264a1d54f8a6aeedf59770b3",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TXez",
+      "code_hash": "94f2083d15ae8c1e98fb6bb9dc240269",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "dNNg",
+      "code_hash": "3bfbc54bc69d002b6a0d8d58fdd180fc",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "yCnT",
+      "code_hash": "deb1cc4f6c74d0f4ba3e7cec052bc4d1",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "wlCL",
+      "code_hash": "4e051bdd240cf682b48f0452f223fc79",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "kqZH",
+      "code_hash": "8fe2cd9480878e379ab3355119eac712",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "rEll",
+      "code_hash": "fad7bd8cc9769dafe7f276ca43578d37",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "dGlV",
+      "code_hash": "f76cbdc5cf4438f2f944842339947283",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SdmI",
+      "code_hash": "2e75ec223032d26fb65b43832702821a",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lgWD",
+      "code_hash": "89a535a27a5d7e0ba1e82c4529ef4186",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "yOPj",
+      "code_hash": "7fcea4f39cca4af8d576d91022b20ac3",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "fwwy",
+      "code_hash": "f395f3db93a430819a6d3f478cf2fccb",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "urSm",
+      "code_hash": "ee6560dd179b355535aaf39f9d109765",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "jxvo",
+      "code_hash": "a4748857d62646083707e7b0e0579b3c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "mWxS",
+      "code_hash": "9f0dda5c579e6979b900d34c5ebaaf45",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "CcZR",
+      "code_hash": "8f8eed2ad8f08e014c03ca40e7b402ef",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "zlud",
+      "code_hash": "1b76d9c82cf255e14ecd3ddbdd48237e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "tZnO",
+      "code_hash": "43124b16017a45239bafb868644336fa",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "xvXZ",
+      "code_hash": "7d85fbb8b2f348bf7644765c36b9e01e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "CLip",
+      "code_hash": "74446dbb52c13568358c830eefad1290",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "YECM",
+      "code_hash": "aba8217d2906d7a516baf6d9d2ba87f9",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "cEAS",
+      "code_hash": "e37e6f1f96755bd8cb27571283405843",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iXej",
+      "code_hash": "7cc6aa6a68f3adc1057e37a54795e06b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "EJmg",
+      "code_hash": "c748ded4169457a5bec7c40ae330b1b4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "UmEG",
+      "code_hash": "cc52ffb9f5f7ad808667c3914c4cae11",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vEBW",
+      "code_hash": "fe19fb6a44209e06863ae104c02957df",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "kLmu",
+      "code_hash": "be037a74d7eb5788ed28afd1fac1ff85",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "IpqN",
+      "code_hash": "e10e507a55da526e67df63df59bd7656",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "dlnW",
+      "code_hash": "1a6f357d8d00fde95ff4d666cf9e22b4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TTti",
+      "code_hash": "e93f8b8852e46fba5a29ad4c0b1ad3dc",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RKFZ",
+      "code_hash": "eace18773d40e6921f9fc8069b514868",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "IaQp",
+      "code_hash": "91018831d7f54f65931583d19a17ce1c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "IWgg",
+      "code_hash": "cd1a36d0a7b5ccd657620326343262c4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "fCoF",
+      "code_hash": "c037e5105eab73d7655164b38c3ac8fc",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "LkGn",
+      "code_hash": "26bcf9b74a11bb2a07ff337244907c2c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "zVRe",
+      "code_hash": "e3dfd57d2094d738e2925f23bd034d6f",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

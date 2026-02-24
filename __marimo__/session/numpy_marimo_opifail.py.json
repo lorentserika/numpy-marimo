@@ -1,0 +1,151 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.20.2"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "7e818e78ad2146c7999f82ed80307a7d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"numpy-interaktiivne-opifail-tudengi-kood-automaatne-review-juhendamine\">NumPy interaktiivne \u00f5pifail (tudengi kood + automaatne review + juhendamine)</h1>\n<span class=\"paragraph\">See versioon sisaldab:</span>\n<ul>\n<li>\u2705 selgitusi</li>\n<li>\u2705 tudengi sisestuskaste (kirjuta oma kood)</li>\n<li>\u2705 automaatseid kontrolle</li>\n<li>\u2705 kommentaare ja vihjeid (reeglip\u00f5hine review)</li>\n</ul>\n<blockquote>\n<span class=\"paragraph\">Lisasoovitus tudengile: kasuta <strong>terminalis GitHub Copilotit</strong> (v\u00f5i VS Code/PyCharm Copilotit), et k\u00fcsida oma lahenduse kohta lisakommentaare ja selgitusi.</span>\n</blockquote></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "d0f2608a304c85154a11d30eb05e3eed",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"tudengile-kuidas-saada-lisakommentaare-github-copilotilt-ilma-api-ta\">Tudengile: kuidas saada lisakommentaare GitHub Copilotilt (ilma API-ta)</h2>\n<span class=\"paragraph\">P\u00e4rast seda, kui oled oma lahenduse siia sisestanud, v\u00f5id k\u00fcsida lisaselgitust <strong>terminalis GitHub Copilotilt</strong>.</span>\n<h3 id=\"naited-kusimustest-copilotile\">N\u00e4ited k\u00fcsimustest Copilotile</h3>\n<ul>\n<li>\"Selgita, miks <code>np.arange(10)</code> annab v\u00e4\u00e4rtused 0 kuni 9.\"</li>\n<li>\"Kas minu NumPy lahendus on korrektne? Selgita samm-sammult.\"</li>\n<li>\"Mis vahe on <code>np.eye(4)</code> ja <code>np.ones((4,4))</code> vahel?\"</li>\n<li>\"Miks <code>arr.dtype</code> v\u00f5ib olla m\u00f5nes arvutis <code>int32</code>, teises <code>int64</code>?\"</li>\n</ul>\n<h3 id=\"soovituslik-toovoog\">Soovituslik t\u00f6\u00f6voog</h3>\n<ol>\n<li>Kirjuta lahendus selles notebookis</li>\n<li>Vaata automaatset review'd (\u00f5ige/vale + vihjed)</li>\n<li>Kopeeri oma lahendus v\u00f5i error Copilotisse</li>\n<li>K\u00fcsi <em>miks</em> ja <em>kuidas parandada</em></li>\n</ol>\n<span class=\"paragraph\">\ud83d\udc49 Nii saad <strong>kiire kontrolli</strong> siit notebookist ja <strong>pikema selgituse</strong> Copilotilt.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "f865badcc2b6b914fed357d06cb46042",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"opetajale-miks-see-lahendus-on-kasulik-ilma-api-ta\">\u00d5petajale: miks see lahendus on kasulik ilma API-ta?</h2>\n<ul>\n<li><strong>Automaatne kontroll</strong> annab kiire \u00f5ige/vale tagasiside</li>\n<li><strong>Vihjed</strong> suunavad parandama</li>\n<li><strong>GitHub Copilot</strong> saab anda lisakommentaare terminalis/IDE-s ilma eraldi API integratsioonita notebooki sees</li>\n</ul>\n<span class=\"paragraph\">See t\u00e4hendab:</span>\n<ul>\n<li>notebook = kontroll + struktuur</li>\n<li>Copilot = lisaselgitus ja arutelu</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "2eb7fdbcaa554364602e68fffdb126d3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"kaivitamine\">K\u00e4ivitamine</h2>\n<div class=\"language-bash codehilite\"><pre><span></span><code>pip<span class=\"w\"> </span>install<span class=\"w\"> </span>marimo<span class=\"w\"> </span>numpy\npython<span class=\"w\"> </span>-m<span class=\"w\"> </span>marimo<span class=\"w\"> </span>edit<span class=\"w\"> </span>numpy_marimo_review_no_api.py\n</code></pre></div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "6b5f7d942bac99b1cfc0466ece8663cd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "d27c15298aa2002edbba5c55b8a860a5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "7d71a2c7d726b0fb00db1f59af361cf6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='56abceb8-8411-0e6b-939c-971848225c1b'><marimo-dropdown data-initial-value='[&quot;Massiiv 0 kuni 9&quot;]' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Vali \u00fclesanne&lt;/span&gt;&lt;/span&gt;&quot;' data-options='[&quot;Massiiv 0 kuni 9&quot;,&quot;4\u00d74 identiteedimaatriks&quot;,&quot;2 juhuslikku reaalarvu [0,1)&quot;,&quot;`arr.dtype` kui `arr = np.arange(25)`&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false'></marimo-dropdown></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "dd132d98245d91e66914716e1b9d11de",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "af6ceee5f03f8fac9949738116e3039c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"massiiv-0-kuni-9\">Massiiv 0 kuni 9</h2></span><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>\u00dclesanne:</strong> Kirjuta avaldis, mis loob massiivi <code>[0,1,2,3,4,5,6,7,8,9]</code>.</span></span><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Kirjuta ainult avaldis (mitte <code>print(...)</code>).</span></span><marimo-ui-element object-id='Xref-0' random-id='fb46aef0-e437-d496-8927-09b5c081b7dd'><marimo-text-area data-initial-value='&quot;np.arange(0,10)&quot;' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Tudengi lahendus (avaldis)&lt;/span&gt;&lt;/span&gt;&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='4'></marimo-text-area></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "53b90f5f01f065b7058a40fe21507070",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "56c52df67a3086b4c737ce99f153e82d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"automaatne-review\">Automaatne review</h3>\n<span class=\"paragraph\"><strong>Staatus:</strong> \u2705 Korrektne<br />\n<strong>Punktid:</strong> 100/100</span>\n<ul>\n<li>\u00d5ige! Lood massiivi v\u00e4\u00e4rtustega 0 kuni 9.</li>\n<li>V\u00e4ga hea \u2014 t\u00e4pselt oodatud kuju <code>np.arange(0,10)</code>.</li>\n</ul>\n<span class=\"paragraph\"><strong>Tulemus</strong>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">,</span> <span class=\"mi\">2</span><span class=\"p\">,</span> <span class=\"mi\">3</span><span class=\"p\">,</span> <span class=\"mi\">4</span><span class=\"p\">,</span> <span class=\"mi\">5</span><span class=\"p\">,</span> <span class=\"mi\">6</span><span class=\"p\">,</span> <span class=\"mi\">7</span><span class=\"p\">,</span> <span class=\"mi\">8</span><span class=\"p\">,</span> <span class=\"mi\">9</span><span class=\"p\">]</span>\n</code></pre></div></span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
